@@ -23,7 +23,7 @@ var data = [{
 
 var data = new JQL(data); // accept either json string or object literal
 
-console.log(data.select('*').where('name').match('$jo','i').orderBy('room desc').fetch());
+console.log(data.select('*').where('name').match('^jo','i').orderBy('room desc').fetch());
 
 console.log(data.select('*').where('room').lessThan(200).orderBy('name').fetch());
 
