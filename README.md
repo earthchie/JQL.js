@@ -29,3 +29,9 @@ console.log(data.select('*').where('room').lessThan(200).orderBy('name').fetch()
 
 </script>
 ```
+# Limitation
+- ``select('field')`` still bugged. Please always use ``select('*')``
+- ``or`` conditions are not support yet
+
+# License
+WTFPL 2.0 http://www.wtfpl.net/
