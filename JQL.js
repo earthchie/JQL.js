@@ -1,7 +1,7 @@
  /**
  * @name JQL.js
- * @version 1.0.0
- * @update May 20, 2014
+ * @version 1.0.1
+ * @update Aug 20, 2016
  * @author Earthchie http://www.earthchie.com/
  * @license WTFPL v.2 - http://www.wtfpl.net/
  **/
@@ -76,8 +76,13 @@ function JQL(obj){
 		return this;
 	}
 	
-	this.select = function(options){
-		this.options = options;
+	this.select = function(filters){
+        this.options = filters;
+        
+        if(typeof filters === 'string' && filters !== '*'){
+            this.options = filters.split(',');
+        }
+        
 		this.buffer = this.data_source;
 		this.size = false;
 		return this;
@@ -223,11 +228,12 @@ function JQL(obj){
 	
 	this.orderBy = function(field, mode){
 		var sequence = 'asc';
-		var temp = field.split(' ');
+        var target = field.split(' ');
+		var temp = target.pop();
 		
-		if(temp[1] && temp[1].toLowerCase() == 'desc'){
+		if(temp && temp.toLowerCase() == 'desc'){
 			sequence = 'desc';
-			field = temp[0]; 
+			field = target.join(' '); 
 		}
 		
 		// prepare object
