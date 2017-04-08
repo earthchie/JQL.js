@@ -1,11 +1,14 @@
  /**
  * @name JQL.js
- * @version 1.0.1
- * @update Aug 20, 2016
+ * @version 1.0.2
+ * @update Apr 8, 2017
  * @author Earthchie http://www.earthchie.com/
  * @license WTFPL v.2 - http://www.wtfpl.net/
  **/
 function JQL(obj){
+    if(typeof obj === 'string'){
+        obj = JSON.parse(obj);
+    }
 	this.data_source = obj;
 	this.buffer = obj;
 	this.focused_field = '';
