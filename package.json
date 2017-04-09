@@ -1,6 +1,6 @@
 {
   "name": "jqljs",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "src/index.js",
   "repository": {
     "url": "git@github.com:zapkub/JQL.js.git",
