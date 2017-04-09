@@ -1,0 +1,11 @@
+{
+  "name": "jqljs",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "repository": {
+    "url": "git@github.com:zapkub/JQL.js.git",
+    "type": "git"
+  },
+  "author": "Rungsikorn Rungsikavarnich <rungsikorn@me.com>",
+  "license": "MIT"
+}
