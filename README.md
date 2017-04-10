@@ -1,4 +1,6 @@
 # JQL.js
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+
 Query json structure in SQL-like manners
 
 # Usage 
@@ -31,6 +33,16 @@ console.log(data.select('*').where('room').lessThan(200).orderBy('name').fetch()
 ```
 # Limitation
 - ``or`` conditions are not support yet
+
+
+## Development
+```
+$ npm install
+$ npm test -- --watch // for TDD development
+$ npm run build // bundle
+$ npm run commit // commit change in commitizen
+$ npm run release // bump version and changelog
+```
 
 # License
 WTFPL 2.0 http://www.wtfpl.net/
