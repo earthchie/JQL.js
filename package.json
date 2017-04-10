@@ -9,7 +9,7 @@
   "scripts": {
     "test": "jest",
     "commit": "git-cz || true",
-    "coverage": "jest --coverage",
+    "coverage": "jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "release": "standard-version",
     "build": "rm -rf ./dist && webpack"
   },
@@ -20,6 +20,7 @@
     "babel-loader": "^6.4.1",
     "babili-webpack-plugin": "^0.0.11",
     "commitizen": "^2.9.6",
+    "coveralls": "^2.13.0",
     "cz-conventional-changelog": "^2.0.0",
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^14.1.0",
