@@ -1,7 +1,7 @@
 {
   "name": "jqljs",
   "version": "0.1.0",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "repository": {
     "url": "git@github.com:zapkub/JQL.js.git",
     "type": "git"
@@ -10,12 +10,15 @@
     "test": "jest",
     "commit": "git-cz",
     "coverage": "jest --coverage",
-    "release": "standard-version"
+    "release": "standard-version",
+    "build": "rm -rf ./dist && webpack"
   },
   "author": "Rungsikorn Rungsikavarnich <rungsikorn@me.com>",
   "license": "MIT",
   "devDependencies": {
     "babel-eslint": "^7.2.1",
+    "babel-loader": "^6.4.1",
+    "babili-webpack-plugin": "^0.0.11",
     "commitizen": "^2.9.6",
     "cz-conventional-changelog": "^2.0.0",
     "eslint": "^3.19.0",
@@ -27,7 +30,8 @@
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.3",
     "jest": "^19.0.2",
-    "standard-version": "^4.0.0"
+    "standard-version": "^4.0.0",
+    "webpack": "^2.3.3"
   },
   "config": {
     "commitizen": {

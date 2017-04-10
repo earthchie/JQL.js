@@ -9,3 +9,5 @@ All notable changes to this project will be documented in this file. See [standa
 ### Features
 
 * **Unit test:** Add unit test with Jest and some code coverage ([6c8b493](https://github.com/zapkub/JQL.js/commit/6c8b493))
+
+> NOTE: Add commitizen with conventional changelog support
