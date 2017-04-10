@@ -9,7 +9,7 @@ Query json structure in SQL-like manners
 
 ```HTML
 
-<script src="JQL.js" type="text/javascript"></script>
+<script src="dist/jql.min.js" type="text/javascript"></script>
 <script type="text/javascript">
 var data = [{
   name: 'John',
@@ -46,6 +46,7 @@ $ npm run build // bundle
 $ npm run commit // commit change in commitizen
 $ npm run release // bump version and changelog
 ```
+Note: NPM support added by [zapkub](https://github.com/earthchie/JQL.js/pull/1), Thanks!
 
 # License
 WTFPL 2.0 http://www.wtfpl.net/
