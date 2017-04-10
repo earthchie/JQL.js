@@ -1,0 +1,42 @@
+{
+  "name": "jqljs",
+  "version": "0.2.0",
+  "main": "dist/index.js",
+  "repository": {
+    "url": "git@github.com:zapkub/JQL.js.git",
+    "type": "git"
+  },
+  "scripts": {
+    "test": "jest",
+    "commit": "git-cz || true",
+    "coverage": "jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "release": "standard-version",
+    "build": "rm -rf ./dist && webpack"
+  },
+  "author": "Rungsikorn Rungsikavarnich <rungsikorn@me.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-eslint": "^7.2.1",
+    "babel-loader": "^6.4.1",
+    "babili-webpack-plugin": "^0.0.11",
+    "commitizen": "^2.9.6",
+    "coveralls": "^2.13.0",
+    "cz-conventional-changelog": "^2.0.0",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-config-clogii": "^1.0.1",
+    "eslint-plugin-flow-vars": "^0.5.0",
+    "eslint-plugin-flowtype": "^2.30.4",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3",
+    "jest": "^19.0.2",
+    "standard-version": "^4.0.0",
+    "webpack": "^2.3.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

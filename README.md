@@ -1,4 +1,8 @@
 # JQL.js
+[![Travis Status](https://travis-ci.org/zapkub/JQLjs.svg?branch=master)](https://travis-ci.org/zapkub/JQLjs)
+[![Coverage Status](https://coveralls.io/repos/github/zapkub/JQLjs/badge.svg?branch=master)](https://coveralls.io/github/zapkub/JQLjs?branch=master)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+
 Query json structure in SQL-like manners
 
 # Usage 
@@ -31,6 +35,17 @@ console.log(data.select('*').where('room').lessThan(200).orderBy('name').fetch()
 ```
 # Limitation
 - ``or`` conditions are not support yet
+
+
+## Development
+> NOTE: commitizen welcome please read [Commitizen](https://github.com/commitizen/cz-cli)
+```
+$ npm install
+$ npm test -- --watch // for TDD development
+$ npm run build // bundle
+$ npm run commit // commit change in commitizen
+$ npm run release // bump version and changelog
+```
 
 # License
 WTFPL 2.0 http://www.wtfpl.net/
