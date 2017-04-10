@@ -36,6 +36,7 @@ console.log(data.select('*').where('room').lessThan(200).orderBy('name').fetch()
 
 
 ## Development
+> NOTE: commitizen welcome please read [Commitizen](https://github.com/commitizen/cz-cli)
 ```
 $ npm install
 $ npm test -- --watch // for TDD development
