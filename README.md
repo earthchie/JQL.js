@@ -1,16 +1,30 @@
-# JQL.js
+# jqljs
 [![npm version](https://badge.fury.io/js/jqljs.svg)](https://badge.fury.io/js/jqljs)
 [![Travis Status](https://travis-ci.org/zapkub/JQLjs.svg?branch=master)](https://travis-ci.org/zapkub/JQLjs)
 [![Coverage Status](https://coveralls.io/repos/github/zapkub/JQLjs/badge.svg?branch=master)](https://coveralls.io/github/zapkub/JQLjs?branch=master)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 Query json structure in SQL-like manners
-
 # Usage 
+**with npm/commonjs/webpack**
+```
+$ npm install jqljs --save
+```
+```js
+const JQL = require('jqljs');
+const collection = new JQL([/** your data */]);
+// create query
+const query = collection.select('*').where('name').match('^jo', 'i');
+// result here
+const result = query.fetch();
+```
 
+
+**or with legacy script tag**
 ```HTML
-
 <script src="dist/jql.min.js" type="text/javascript"></script>
+```
+```HTML
 <script type="text/javascript">
 var data = [{
   name: 'John',
@@ -36,6 +50,10 @@ console.log(data.select('*').where('room').lessThan(200).orderBy('name').fetch()
 ```
 # Limitation
 - ``or`` conditions are not support yet
+
+## TODO
+- [ ] refactor legacy code
+- [ ] coverage 80%++
 
 
 ## Development
