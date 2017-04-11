@@ -1,7 +1,7 @@
 # jqljs
 [![npm version](https://badge.fury.io/js/jqljs.svg)](https://badge.fury.io/js/jqljs)
 [![Travis Status](https://travis-ci.org/zapkub/JQLjs.svg?branch=master)](https://travis-ci.org/zapkub/JQLjs)
-[![Coverage Status](https://coveralls.io/repos/github/zapkub/JQLjs/badge.svg?branch=master)](https://coveralls.io/github/zapkub/JQLjs?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/earthchie/JQL.js/badge.svg?branch=master)](https://coveralls.io/github/earthchie/JQL.js?branch=master)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 Query json structure in SQL-like manners
