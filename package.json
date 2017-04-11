@@ -3,7 +3,7 @@
   "version": "0.2.0",
   "main": "dist/index.js",
   "repository": {
-    "url": "git@github.com:zapkub/JQL.js.git",
+    "url": "https://github.com/earthchie/JQL.js",
     "type": "git"
   },
   "scripts": {
@@ -13,7 +13,7 @@
     "release": "standard-version",
     "build": "rm -rf ./dist && webpack"
   },
-  "author": "Rungsikorn Rungsikavarnich <rungsikorn@me.com>",
+  "author": "Thanarat Kuawattanaphan <earthchie@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "babel-eslint": "^7.2.1",
