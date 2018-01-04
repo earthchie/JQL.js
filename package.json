@@ -1,6 +1,6 @@
 {
   "name": "jqljs",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "main": "src/index.js",
   "repository": {
     "url": "https://github.com/earthchie/JQL.js",
